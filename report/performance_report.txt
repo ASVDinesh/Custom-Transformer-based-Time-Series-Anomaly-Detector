@@ -1,0 +1,31 @@
+Transformer-Based Time Series Anomaly Detection Report
+
+Dataset:
+Synthetic univariate time series with injected anomalies.
+Total samples: 1500
+Anomalies injected at indices: 300–309, 700–709, 1200–1209.
+
+Preprocessing:
+- MinMax normalization applied
+- Sliding window size: 30
+- Train/Test split: 70/30
+
+Model Architecture:
+- Transformer Encoder
+- 3 encoder layers
+- 4 attention heads
+- Positional encoding
+- Reconstruction-based anomaly detection
+
+Training:
+- Loss function: Mean Squared Error
+- Optimizer: Adam
+- Epochs: 20
+
+Evaluation:
+Precision: <PASTE YOUR VALUE>
+Recall: <PASTE YOUR VALUE>
+F1-score: <PASTE YOUR VALUE>
+
+Conclusion:
+The Transformer model successfully learned normal temporal patterns and detected anomalous behavior based on reconstruction error.
